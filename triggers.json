@@ -54,14 +54,9 @@
         "text": "# Guitar Hero II Deluxe Unified\nNote: This project is massively unfinished and contains very few modifications.\nhttps://github.com/hmxmilohax/Guitar-Hero-II-Deluxe-Unified",
         "files": []
     },
-    "response12": {
-        "triggers": ["!fogjuice"],
-        "text": "",
-        "files": ["media/here_come_the_fog_juice_1.mp4"]
-    },
     "response13": {
         "triggers": ["!gh2dx"],
-        "text": "# Guitar Hero II Deluxe\nhttps://gh2.neocities.org/",
+        "text": "# Guitar Hero II Deluxe\nhttps://gh2dx.milohax.org/",
         "files": []
     },
     "response14": {
@@ -81,18 +76,18 @@
     },
     "response17": {
         "triggers": ["!instruments"],
-        "text": "https://rb3pc.milohax.org/english/controllers/",
+        "text": "https://rb3pc.milohax.org/ctrls",
         "files": []
     },
     "response18": {
         "triggers": ["!keynav"],
-        "text": "https://media.discordapp.net/attachments/961395228655374376/1199173410027229305/7-f404526bcf.gif",
+        "text": "https://rb3pc.milohax.org/images/instruments/xtra/midi/rbkeysoctshift.gif",
         "files": []
     },
     "response19": {
         "triggers": ["!log", "!logs"],
-        "text": "To upload a log:\n* Run into the crash or problem first then close out RPCS3.\n* **DO NOT REOPEN IT!**\n* Send `RPCS3.log` or `RPCS3.log.gz`\n* On Windows, it's in the folder you have RPCS3 in.\n* On Linux, it's in `~/.cache/rpcs3/`.\n* On macOS, it's in `~/Library/Caches/rpcs3`. (May require you to show hidden folders)\nhttps://cdn.discordapp.com/attachments/1146938356664639589/1222340270545436753/BrowserPreview_tmp.png",
-        "files": []
+        "text": "Error: User provided no rpcs3.log.\nTo upload a log, type `!log` and:\n* Run into the crash or problem first then close out RPCS3.\n* **DO NOT REOPEN IT!**\n* Send `RPCS3.log` or `RPCS3.log.gz`\n* On Windows, it's in the folder you have RPCS3 in.\n* On Linux, it's in `~/.cache/rpcs3/`.\n* On macOS, it's in `~/Library/Caches/rpcs3`. (May require you to show hidden folders)\nThe bot should be able to process your log to help you understand what may be wrong.",
+        "files": ["media/log.png"]
     },
     "response20": {
         "triggers": ["!lore"],
@@ -100,13 +95,13 @@
         "files": ["media/lore.mov"]
     },
     "response21": {
-        "triggers": ["!mem"],
+        "triggers": ["!mem", "!himem", "!memory"],
         "text": "# RPCS3 High Memory Mode #\nThis will increase your song limit to 16,000 and should allow for better stability and less crashes by allowing RB3 to use extra memory in your system.\n\nStep 1: Right click Rock Band 3 and select `Change Custom Configuration`\nStep 2: Enable `Debug Console Mode` under the Advanced tab\nStep 3: Download the dx_high_memory.dta file at the bottom of this post into: `dev_hdd0/game/BLUS30463/USRDIR`\n\n*if you already installed the pre-made recommended configuration from the rb3pc guide, you will already have this*\n\nDO NOT ATTEMPT TO USE THIS ON HARDWARE",
         "files": ["media/mem.png", "media/dx_high_memory.dta"]
     },
     "response22": {
         "triggers": ["!mididrums"],
-        "text": "# Using Midi Drums Over USB on RPCS3\nhttps://rb3pc.milohax.org/instruments/misc/mididrums",
+        "text": "# Using Midi Drums Over USB on RPCS3\nhttps://rb3pc.milohax.org/ctrls_drums_midi",
         "files": []
     },
     "response23": {
@@ -121,7 +116,7 @@
     },
     "response25": {
         "triggers": ["!nautilus", "!c3contools", "!c3tools"],
-        "text": "# Latest Nautilus\n<#1154040502845444277>\nhttps://bit.ly/nemoNAUTILUS",
+        "text": "# Latest Nautilus\n<#1154040502845444277>\nhttps://nemosnautilus.com/nautilus/",
         "files": []
     },
     "response26": {
@@ -136,13 +131,13 @@
     },
     "response28": {
         "triggers": ["!ps3", "!ps3customs"],
-        "text": "# Rock Band Custom Song Tutorial for PS3\n<https://docs.google.com/document/d/1YwGNT1oPUgfek-p3sLCZv4b-PsO8Yv9eobx5fV6W2vQ/>",
+        "text": "# Rock Band Custom Song Tutorial for PS3\nhttps://rb3pc.milohax.org/customs_intro",
         "files": []
     },
     "response29": {
         "triggers": ["!quickconvert", "!batchprocess", "!recompile"],
         "text": "Batch recompile, Load a song, and Batch process, all rebuild the songs from scratch, losing all metadata originally associated with the song.\nThis means the song will not be correct for leaderboards, online play, or dx song upgrades (harmonies, pro upgrades, rb4 chart updates).\n**Never recompile songs already existing in Rock Band format back to Rock Band.**",
-        "files": ["media/quickconvert.png"]
+        "files": ["media/quickconvert.png", "media/quickconvert2.png"]
     },
     "response30": {
         "triggers": ["!rb2dx"],
@@ -186,7 +181,7 @@
     },
     "response38": {
         "triggers": ["!rpcs3"],
-        "text": "## How to set up Rock Band 3 for RPCS3\n**Includes instrument configuration, recommended settings, and how to play online.**\n<https://hmxmilohax.github.io/rb3-pc/english/intro/>\n## Como configurar a Rock Band 3 para RPCS3\n**Incluye instrucciones para instrumentos, ajustes recomendados y tambien como jugar en línea.**\n<https://hmxmilohax.github.io/rb3-pc/espanol/intro/>",
+        "text": "## How to set up Rock Band 3 for RPCS3\n**Includes instrument configuration, recommended settings, and how to play online.**\n<https://rb3pc.milohax.org/gs_disc>\n## Como configurar a Rock Band 3 para RPCS3\n**Incluye instrucciones para instrumentos, ajustes recomendados y tambien como jugar en linea.**\n<https://rb3pc.milohax.org/gs_disc_es>",
         "files": []
     },
     "response39": {
@@ -208,11 +203,6 @@
         "triggers": ["!poop", "!focus"],
         "text": "",
         "files": ["media/focus.mp4"]
-    },
-    "response43": {
-        "triggers": ["!tethered"],
-        "text": "# Connecting to Xbox LIVE on an RGH/JTAG using a stealth server\n\n## We highly recommend using [Tethered Live](<https://tethered.live/>),\n**It's free forever, very reliable, and *doesn't* require real Xbox LIVE Gold/Game Pass Core.**\n\n* Make sure you're on the latest dashboard version, (`2.0.17559.0`, released Nov 12, 2019).\n * If you're not for whatever reason, **follow [this guide](<https://youtu.be/X2RUwKoEFqk>) to update safely**.\n* We recommend you **make a new Xbox account** [**on the Microsoft website**](<https://www.xbox.com/>), just to be safe\n * If your gamertag isn't already taken, it won't have the 4 digit handle at the end\n* **Click `Download Files`** on [**Tethered's website**](<https://tethered.live/>)\n * Extract the `.rar` file, **copy the contents of the `HDD` folder to the *ROOT* of your hard drive, not in a subfolder!**\n * Putting the files in a subfolder will cause the system to boot loop. If this happens, turn on your console and immediately press the eject button\n* Open DashLaunch and select `Network`\n * Make sure `liveblock` and `livestrong` are ***:green_circle: ENABLED!!!*** Tethered will set them automatically depending on your connection\n* Scroll down and select `Plugins`, **set the plugins as follows**:\n * plugin1 = `Hdd:\\xbdm.xex`\n * plugin2 = `Hdd:\\Tethered.Live`\n * plugin3 = `Hdd:\\JRPC2.xex`\n * plugin4 = `Hdd:\\RPC.xex`\n * plugin5 = `(none)` or anything you wish to have\n* If you need to use more plugins, **refer to the first screenshot**.\n* Press the right bumper, scroll down to `Hdd`, and press `X` (not A) to save everything\n* **Restart the console**, it should restart once or twice on the boot animation, that's normal\n* Press the guide button, **if everything is teal, it worked**\n* Scroll down to `Download profile` and **log in with the account you just created**\n * Keep in mind downloading profiles on 360 kinda sucks, just be patient\n * If you're having trouble downloading your profile, **refer to the second screenshot**.\n## Once it's done, you're all ready! Here are some additional notes:\n* Don't cheat, this goes without saying, you will get account banned\n* Don't pirate avatar store items or abnormally mod your avatar, unlockable avatar awards that come with games are safe from what i understand\n* If you don't have real Xbox LIVE Gold/Game Pass Core, you will not be able to find anyone if you search, you have to use invites\n* If you ever need to change something in DashLaunch, I recommend you edit `launch.ini` directly so you don't accidentally save liveblock/strong as disabled\n* If you're using RB3Enhanced, disable Liveless and GoCentral in `rb3.ini`\n* Tethered will update automatically on boot if necessary\n* \"Freemode\" means all premium features are temporarily free to use (No KV Mode, custom colors, quick launch, etc)\n## The following are *100% safe* to do when connected to Tethered:\n* Send invites, messages, use parties, etc.\n* Download title updates over Xbox LIVE\n* Use FTP or Xbox 360 Neighborhood\n* Use Aurora as a front-end dash and to launch games",
-        "files": ["media/tethered1.jpg", "media/tethered2.png"]
     },
     "response44": {
         "triggers": ["!textures"],
@@ -286,12 +276,12 @@
     },
     "response58": {
         "triggers": ["!teleport", "!teleporting", "!floating", "!hair"],
-    "text": "Glitching/teleporting instruments is a vanilla Rock Band 3 bug present in **PS3**, made worse in **RPCS3**.\nLinked below is a file you can extract and patch your\n**Vanilla Base RB3 extracted disc game files**\nto fix the issue for almost all guitars and basses.\nAlso below is a very detailed guide of items that **ARE** affected by the teleporting. Besides the clear microphone, this is a list of items to avoid.\nCurrently the only fix for microphones is using the transparent microphone.\n[PS3 Guitar/Bass Patch Files](https://github.com/hmxmilohax/rock-band-3-deluxe/raw/main/dependencies/ps3_patcher/rb3_ps3_guitar_glitch_fix.7z)\nhttps://carlmylo.github.io/docu-rpcs3/trbl_teleprob",
+    "text": "Glitching/teleporting instruments is a vanilla Rock Band 3 bug present in **PS3**, made worse in **RPCS3**.\nLinked below is a file you can extract and patch your\n**Vanilla Base RB3 extracted disc game files**\nto fix the issue for almost all guitars and basses.\nAlso below is a very detailed guide of items that **ARE** affected by the teleporting. Besides the clear microphone, this is a list of items to avoid.\nCurrently the only fix for microphones is using the transparent microphone.\n[PS3 Guitar/Bass Patch Files](https://github.com/hmxmilohax/rock-band-3-deluxe/raw/main/dependencies/ps3_patcher/rb3_ps3_guitar_glitch_fix.7z)\nhttps://rb3pc.milohax.org/trbl_teleprob",
         "files": []
     },
     "response59": {
         "triggers": ["!wcb", "!buffers", "!colorbuffers", "!writecolorbuffers"],
-    "text": "If your characters appear bugged, you need to enable 'Write Color Buffers' in the RPCS3 GPU settings menu.",
+    "text": "To fix buggy character textures, you need to enable 'Write Color Buffers' under the GPU tab in Rock Band 3's Custom Configuration.\n\nThis and many other settings are covered in the RPCS3 setup guide so check it out to properly setup your config.\nhttps://rb3pc.milohax.org/",
         "files": ["media/wcbon.png"]
     },
     "response60": {
@@ -308,5 +298,131 @@
         "triggers": ["!guitars"],
     "text": "Despite the click bait thumbnail, the riffmaster is also a great purchase in the proper scenario.\nhttps://www.youtube.com/watch?v=YudkMhOIU_8",
         "files": []
+    },
+    "response63": {
+        "triggers": ["!fig"],
+    "text": "",
+        "files": ["media/fig.mp4"]
+    },
+    "response64": {
+        "triggers": ["!dwd"],
+    "text": "To fix crashes after songs, you need to set Driver Wake-Up Delay 20 or a multiple of 20 under the Advanced tab in Rock Band 3's Custom Configuration.",
+        "files": ["media/dwd.png"]
+    },
+    "response65": {
+        "triggers": ["!global"],
+    "text": "All tweaks to Rock Band 3 should be done in the game's custom configuration, not the global one.",
+        "files": ["media/custnotglobal.png"]
+    },
+    "response66": {
+        "triggers": ["!netset"],
+    "text": "To fix freezing while scrolling the song library, set Network Status to Connected under the Network tab in Rock Band 3's Custom Configuration.",
+        "files": ["media/dwd.png"]
+    },
+    "response67": {
+        "triggers": ["!caca"],
+        "text": "",
+        "files": ["media/caca.mp4"]
+    },
+    "response68": {
+        "triggers": ["!content", "!confiles", "!livefiles"],
+        "text": "* Rock Band 1/2 DLC\n`/Hdd1/Content/0000000000000000/45410829/00000001`\n`/Hdd1/Content/0000000000000000/45410829/00000002`\n* Rock Band 3 DLC\n`/Hdd1/Content/0000000000000000/45410914/00000001`\n`/Hdd1/Content/0000000000000000/45410914/00000002`\n\nCON files go in `00000001`\nLIVE files go in `00000002`\n\nUse RBtoUSB from [Nautilus](https://nemosnautilus.com/nautilus/) to place files in the correct place for you on a flash drive if unsure",
+        "files": []
+    },
+    "response69": {
+        "triggers": ["!liveless"],
+        "text": "# __Liveless Setup (RB3)__ #\n\nRequired Rock Band 3 Enhanced\n(Install instructions included in a .txt file):\nhttps://rb3e.rbenhanced.rocks/download.html\n\nAlong with the latest enhanced nightly, `RB3Enhanced-Xbox-NoDebug`\nhttps://nightly.link/RBEnhanced/RB3Enhanced/workflows/build/master\n\n\nIn the rb3.ini remove the # from both STUNServer and STUNServerPort and add:\n```ini\n[Xbox360]\nLivelessAddress = liveless-testing.ipg.pw\n\n[Network]\nEnableUPnP = true\n```\n*If you're having trouble connecting to other users or experience ghost players (seeing their highway but score not go up), port forward 9103 UDP to your Xbox*\n\nBoth Liveless & Leaderboards will NOT work with the following:\n* Stealth servers\n* Freestyle Dash 3\n\nIn Dashlaunch, make sure of the following:\nliveblock on, sockpatch on, fakelive off\n\n## __Leaderboards__ ##\n\nReplace the `[GoCentral]` field with the following:\n\n```ini\n[GoCentral]\n# Enables redirecting Rock Central servers to a custom server.\n# This also re-enables Audition Mode if enabled.\n# (This setting is ignored if using an Xbox 360 and connected to official services.)\nEnableGoCentral = true\n# The IP address of the GoCentral server.\nGoCentralAddress = 45.33.44.103\n```",
+        "files": ["media/liveless1.png", "media/liveless2.png"]
+    },
+    "response70": {
+        "triggers": ["!instrumentos"],
+        "text": "https://rb3pc.milohax.org/ctrls_es",
+        "files": []
+    },
+    "response71": {
+        "triggers": ["!bateriamidi"],
+        "text": "# Como usar tu batería MIDI con RPCS3\nhttps://rb3pc.milohax.org/ctrls_drums_midi_es",
+        "files": []
+    },
+    "response72": {
+        "triggers": ["!teleportacion", "!pelo"],
+        "text": "Los errores y bugeos con accesorios y instrumentos volando **son parte de la version vanilla de Rock Band 3 para Pleb 3**. El emulador **RPCS3** lo hace peor.\nAbajo hay una pagina con un parche para arreglar las guitarras y cuales cosas puedes evadir para evitar tener errores visuales.\nhttps://rb3pc.milohax.org/trbl_teleprob_es",
+        "files": []
+    },
+    "response73": {
+        "triggers": ["!globales"],
+    "text": "Cualquier ajuste a Rock Band 3 debe de ser hecho en la configuracion personalizada del juego, no en la global.",
+        "files": ["media/custnotglobal_es.png"]
+    },
+    "response74": {
+        "triggers": ["!milk"],
+    "text": "",
+        "files": ["media/milk.mp4"]
+    },
+    "response75": {
+        "triggers": ["!memalta", "!memoria"],
+    "text": "# Modo de alta memoria para RPCS3 #\nEsto va aumentar el numero de canciones a 16.000 y tambien ayudada con la estabilidad de Rock Band 3 gracias a la memoria adicional.\n\nPaso 1: Haz click en Rock Band 3 y selecciona `Change Custom Configuration`\nPaso 2: En la pestaña de `Advanced`, activa `Debug Console Mode`\nPaso 3: Descarga el archivo `dx_high_memory.dta` abajo de este mensaje\nPaso 4: Haz click derecho en Rock Band 3 en RPCS3 y luego en `Open Folder > Open Game Data Folder`\nPaso 5: Arrastra el archivo `dx_high_memory.dta` dentro de `USRDIR`\n\n*Si usaste una Configuracion Rapida de la guia rb3pc, ya tienes esto.*\n\nNO INTENTES USAR ESTE ARCHIVO EN UNA CONSOLA",
+        "files": ["media/mem.png", "media/dx_high_memory.dta"]
+    },
+    "response76": {
+        "triggers": ["!configuracion"],
+    "text": "Para subir el archivo de configuracion:\n* Ve a la carpeta donde tienes RPCS3\n* Entra a la carpeta `config` y luego en `custom_configs`\n* Para Rock Band 2, manda `config_BLUS30147.yml`\n* Para Rock Band 3, manda `config_BLUS30463.yml`",
+        "files": []
+    },
+    "response77": {
+        "triggers": ["!gris"],
+    "text": "# Jugadores en PS3:\n\n Tienes customs que estan grises? Desactiva el `Control paterno` en PS3 y debe de arreglarlo! Por defecto, esta en `Nivel 9`, cual no te va a dejar elegir canciones sin clasificaciones como muchas customs y hasta Rock Band Network.\n\nXMB: [ Ajustes ] -> [ Ajustes de seguridad ] -> [ Control Paterno ] -> [ **No** ]",
+        "files": ["media/gris.png"]
+    },
+    "response78": {
+        "triggers": ["!ps3es", "!ps3customses"],
+    "text": "# Tutorial de Canciones Customs de Rock Band para PS3/RPCS3\nhttps://rb3pc.milohax.org/customs_intro_es",
+        "files": []
+    },
+    "response79": {
+        "triggers": ["!canciones"],
+    "text": "# Lista de DLCs para Rock Band y Guitar Hero\n<https://docs.google.com/spreadsheets/d/1-3lo2ASxM-3yVr_JH14F7-Lc1v2_FcS5Rv_yDCANEmk>\n## Tambien mira esta lista de paquetes hechos por la comunidad para jugar en linea.\n<https://docs.google.com/spreadsheets/d/1uFJDQPMLa-FspQ6WtbotTIy6u1YSB79i2sp9nSZVSfc>\n### Igualmente, esta este repo de Github de customs hechas por la comunidad de RB2 Deluxe.\n<https://github.com/Rock-Band-Road-Crew/rbrc-customs/tree/main>",
+        "files": []
+    },
+    "response80": {
+        "triggers": ["!dejaver", "!analizar"],
+    "text": "Manda un historial (log) para ver que paso con el emulador.\nPara subir un historial (log), escribe `!log` y:\n* Trata de replicar el problema o crasheo y cierra RPCS3.\n* **¡NO LO ABRAS DE VUELTA!**\n* Manda el archivo `RPCS3.log` o `RPCS3.log.gz`\n* En Windows, esta en la carpeta donde tienes RPCS3.\n* En Linux, esta en `~/.cache/rpcs3/`.\n* En macOS, esta en `~/Library/Caches/rpcs3`. (Es posible que necitas activar archivos escondidos)\nDespues de esto, el bot va a analizar el historial para ver donde esta el problema.",
+        "files": ["media/log.png"]
+    },
+    "response81": {
+        "triggers": ["!pr"],
+    "text": "",
+        "files": ["media/plsapprovepr.mp4"]
+    },
+    "response82": {
+        "triggers": ["!convertir", "!conversiones"],
+    "text": "Las opciones de `Batch recompile`, `Load a song` o `Batch process` reconstruyes las canciones, borrando todo los datos especiales de Rock Band. \nEsto resulta en una perdida de ID, cual hace que funcionen en linea y con los tableros de calificaciones. Igualmente, no tendras mejoras de Deluxe (armonias, mejoras Pro, actualizaciones de RB4). \n**NUNCA uses esas opciones si vas a instalar canciones en formato Rock Band en un juego de Rock Band.** Usa la opcion de `Quick convert/pack`",
+        "files": ["media/quickconvert.png", "media/quickconvert2.png"]
+    },
+    "response83": {
+        "triggers": ["!boardgame", "!rbboardgame"],
+    "text": "",
+        "files": ["media/boardgame.webm", "media/boardgame.webp"]
+    },
+    "response84": {
+        "triggers": ["!goodluck"],
+    "text": "",
+        "files": ["media/goodluck.png"]
+    },
+    "response85": {
+        "triggers": ["!practice"],
+    "text": "I feel like practice mode is a way of cheating. You play to play the game, not to FC everything. And you can still FC it by practising the song all over again. Practice mode just takes away the momentum and the charm. It may be frustrating, but that's how it is.",
+        "files": []
+    },
+    "response86": {
+        "triggers": ["!mergesongs"],
+    "text": "Too many songs making your startup take forever? If you're on PS3/RPCS3, you can merge song folders to load faster!\nCheck out the guide here: https://rb3pc.milohax.org/customs_merging",
+        "files": []
+    },
+    "response87": {
+        "triggers": ["!mergesongses"],
+    "text": "Tarda mucho en iniciar tu juego por cargar tus descargas? Puedes combinar paquetes de canciones para que cargue mas rapido si estas en PS3/RPCS3!\nLee la guia aqui:: https://rb3pc.milohax.org/customs_merging_es",
+        "files": []
     }
 }
+
