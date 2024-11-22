@@ -12,8 +12,7 @@ def analyze_log_file(log_file_path):
     firmware_detected = False
     firmware_version = None
     emulator_info = {"version": "", "cpu": "", "os": "", "gpu": ""}
-    language_message = ""
-    
+    spanish_user = False    
     # Sets to track duplicate issues
     onedrive_issues = set()
     save_issues = set()
@@ -74,7 +73,7 @@ def analyze_log_file(log_file_path):
 
         # Check for language setting
         if "Language: Spanish" in line:
-            language_message = "Hola. Explica lo que paso. / This user speaks Spanish."
+            spanish_user = True
 
     # Scan the log file for "Used configuration" and track indices
     for i, line in enumerate(lines):
@@ -398,37 +397,61 @@ def analyze_log_file(log_file_path):
     # Preparing the output
     output = ""
 
-    if critical_issues:
+    if critical_issues and not spanish_user:
         output += "## Critical :exclamation:\n_Guaranteed to be a problem!_\n"
         for issue, lines in critical_issues.items():
             line_info = ", ".join(lines)  # Combine all line numbers
             output += f"{issue} (on {line_info})\n"
+    
+    if critical_issues and spanish_user:
+        output += "## Peligro :exclamation:\n_Esto si es malo!_\n"
+        for issue, lines in critical_issues.items():
+            line_info = ", ".join(lines)  # Combine all line numbers
+            output += f"{issue} (on {line_info})\n"
 
-    if game_issues:
+    if game_issues and not spanish_user:
         output += "\n## Warning :warning:\n_May or may not cause issues._\n"
         for issue, lines in game_issues.items():
             line_info = ", ".join(lines)  # Combine all line numbers
             output += f"{issue} (on {line_info})\n"
 
-    if non_default_settings:
+    if game_issues and spanish_user:
+        output += "\n## Aviso :warning:\n_Puede ser que tengas problemas._\n"
+        for issue, lines in game_issues.items():
+            line_info = ", ".join(lines)  # Combine all line numbers
+            output += f"{issue} (on {line_info})\n"
+
+    if non_default_settings and not spanish_user:
         output += "\n## Non-default settings :question:\n_Set these in Rock Band 3's Custom Configuration. Use `!global` for more information._\n"
         for issue, lines in non_default_settings.items():
             line_info = ", ".join(lines)  # Combine all line numbers
             output += f"{issue} (on {line_info})\n"
 
-    if pad_issues:
+    if non_default_settings and spanish_user:
+        output += "\n## Ajustes innecesarios :question:\n_Cambia esto en la configuracion de Rock Band 3. Escribe `!globales` para mas informacion._\n"
+        for issue, lines in non_default_settings.items():
+            line_info = ", ".join(lines)  # Combine all line numbers
+            output += f"{issue} (on {line_info})\n"
+
+    if pad_issues and not spanish_user:
         output += "\n## Pad Issues :guitar:\n_Your controller might not be setup correctly._\n"
         for issue, lines in non_default_settings.items():
             line_info = ", ".join(lines)  # Combine all line numbers
             output += f"{issue} (on {line_info})\n"
+
+    if pad_issues and spanish_user:
+        output += "\n## Configuracion de controles :guitar:\n_Detecte problemas con tu configuracion de controles._\n"
+        for issue, lines in non_default_settings.items():
+            line_info = ", ".join(lines)  # Combine all line numbers
+            output += f"{issue} (on {line_info})\n"
     
-    if not critical_issues and not game_issues and not non_default_settings and not pad_issues:
+    if not critical_issues and not game_issues and not non_default_settings and not pad_issues and not spanish_user:
         output += "## No issues detected. Let us know if this is wrong."
+
+    if not critical_issues and not game_issues and not non_default_settings and not pad_issues and spanish_user:
+        output += "## No detecte un problema. Dime si no estoy correcto."
 
     # Add emulator information
     output += f"\n\n**Version:** {emulator_info['version']}\n**CPU:** {emulator_info['cpu']}\n**GPU:** {emulator_info['gpu']}\n{emulator_info['os']}"
-
-    if language_message:
-        output += f"\n\n{language_message}"
 
     return output
